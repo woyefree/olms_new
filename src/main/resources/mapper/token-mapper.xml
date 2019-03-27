@@ -15,11 +15,11 @@
 			<if test="token != null">
 				token = #{token},
 			</if>
-			<if test="login_time != null">
+			<if test="loginTime != null">
 				login_time = #{loginTime}
 			</if>
 		</set>
-		where user_id = #{user_id}
+		where user_id = #{userId}
 	</update>
 
 	<select id="getTokenByTokenStr" resultType="Token">

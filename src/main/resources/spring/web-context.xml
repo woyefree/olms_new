@@ -46,12 +46,13 @@
 	</aop:config>
 	
 	
-	<!-- <mvc:interceptors>
+	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**"/>
-			<bean class="com.neuedu.olms.web.LogInterceptor"></bean>
+			<mvc:exclude-mapping path="/upload/**"/>
+			<bean class="com.neuedu.olms.web.PriviledgeInterceptor"></bean>
 		</mvc:interceptor>
-	</mvc:interceptors> -->
+	</mvc:interceptors>
 	
 	<mvc:resources mapping="/upload/**" location="/upload/"/>
 </beans>

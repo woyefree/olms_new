@@ -13,6 +13,7 @@ public class Token {
 	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
+	
 	public Date getLoginTime() {
 		return loginTime;
 	}
